@@ -4,6 +4,7 @@
     <input type="text" name="vin" placeholder='输入17位车架号' />
     <button formType="submit" class="search">搜索</button>
   </view>
+  
 </form>
 <view wx:if="{{flag}}">
   <button formType="button" class="btn">车辆基本信息</button>
