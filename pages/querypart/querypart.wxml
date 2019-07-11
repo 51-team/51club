@@ -1,0 +1,35 @@
+<!--pages/querypart/querypart.wxml-->
+<view>原厂零件信息</view>
+<view id='oemInfo' class="table">
+  <view class="tr">
+            <view class="th">零件描述</view>
+            <view class="th">OEM</view>
+            <view class="th">原厂价格</view>
+            <view class="th">工时价格</view>
+            <view class="th">用量</view>
+  </view>
+  <view class="tr" wx:for="{{oemParts}}" wx:key="oemParts">
+            <view class="td">{{item.kpsName}}</view>
+            <view class="td"><text selectable="true">{{item.oem}}</text></view>
+            <view class="td">{{item.oemPrice}}</view>
+            <view class="td">{{item.workTimePrice}}</view>
+            <view class="td">{{item.useCount}}</view>
+  </view>   
+</view>
+<view wx:if="{{flag}}">后市场零件信息</view>
+<view id='partInfo' class="table">
+  <view class="tr">
+            <view class="th">描述</view>
+            <view class="th">后市场零件号</view>
+            <view class="th">品牌</view>
+            <view class="th">京东价格</view>
+            <view class="th">途虎价格</view>
+  </view>
+  <view class="tr" wx:for="{{parts}}" wx:key="parts">
+            <view class="td">{{item.desc}}</view>
+            <view class="td"><text selectable="true">{{item.pno}}</text></view>
+            <view class="td">{{item.brand}}</view>
+            <view class="td">{{item.jdPrice}}</view>
+            <view class="td">{{item.thPrice}}</view>
+  </view>
+</view>

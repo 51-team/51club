@@ -1,0 +1,79 @@
+<!--pages/repairpart/repairpart.wxml-->
+<form bindsubmit="formSubmit">
+<!--提交按钮  -->
+<input type="text" name="vin" placeholder='输入17位车架号' style='border:1px solid #ccc;height:30px;'/>
+<button formType="submit" class="search">搜索</button>   
+</form>
+<view wx:if="{{flag}}"><button formType="button" class="btn">车辆基本信息</button>  </view>
+<scroll-view scroll-x="true" class='scrollClass'>
+  <view id='basicInfo' class="table"  wx:if="{{flag}}">
+        <view class='table_main'>
+            <view class="td">品牌</view>
+            <view class="td">{{modelInfo.brand}}</view>
+        </view>
+        <view class='table_main'>
+            <view class="td">车系</view>
+            <view class="td">{{modelInfo.series}}              </view>
+        </view>
+        <view class='table_main'>
+            <view class="td">车型</view>
+            <view class="td">{{modelInfo.model}}              </view>
+        </view> 
+        <view class='table_main'>
+            <view class="td">排量</view>
+            <view class="td">{{modelInfo.displacement}}</view>
+        </view>
+        <view class='table_main'>
+            <view class="td">变速箱</view>
+            <view class="td">{{modelInfo.gearbox}}</view>
+        </view>
+        <view class='table_main'>
+            <view class="td">底盘</view>
+            <view class="td">{{modelInfo.chassis}}</view>
+        </view>
+        <view class='table_main'>
+            <view class="td">发动机</view>
+            <view class="td">{{modelInfo.motor}}</view>
+        </view>
+        <view class='table_main'>
+            <view class="td">功率</view>
+            <view class="td">{{modelInfo.kw}}</view>
+        </view>
+        <view class='table_main'>
+            <view class="td">马力</view>
+            <view class="td">{{modelInfo.hp}}</view>
+        </view>
+        <view class='table_main'>
+            <view class="td">驱动</view>
+            <view class="td">{{modelInfo.driver}}</view>
+        </view>
+        <view class='table_main'>
+            <view class="td">起止时间</view>
+            <view class="td">{{modelInfo.modelYear}}</view>
+        </view>
+    </view>
+</scroll-view>
+<view  wx:if="{{flag}}" bindtap="onclick" data-index="{{modelInfo.modelId}}">
+  查看零件列表
+</view>
+ <view class="container">
+  <view class="nav_left">
+    <block wx:for="{{navLeftItems}}">
+      <view class="nav_left_items {{curNav == index ? 'active' : ''}}" bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.shortCutId}}">{{item.title}}</view>
+    </block>
+  </view>
+  <view class="nav_right">
+    <view wx:if="{{navRightItems.length}}">
+      <block wx:for="{{navRightItems}}">
+        <view class="nav_right_items">
+          <navigator url="list/index?modelId={{modelInfo.modelId}}&groupId={{navRightItems[curIndex].assemblyGroupNodeId}}">
+              <!--<image wx:if="{{item.picture}}" src="{{item.picture}}"></image>-->
+              <!--<image wx:else src="../../images/gift_icon.png"></image>-->
+              <text>{{item.title}}</text>
+          </navigator>
+        </view>
+      </block>
+    </view>
+    <view wx:else class="nodata">暂无数据</view>
+  </view>
+</view>

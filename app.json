@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/querypart/querypart",
+    "pages/repairpart/repairpart",
+    "pages/repairpart/list/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fafafa",
+    "navigationBarTitleText": "汽配俱乐部",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#3c3c3c",
+    "selectedColor": "#37AE14",
+    "borderStyle": "white",
+    "backgroundColor":"#fafafa",
+    "list": [
+      {
+        "selectedIconPath": "img/4.png",
+        "iconPath": "img/4.png",
+        "pagePath": "pages/index/index",
+        "text": "保养件"
+      },
+      {
+        "selectedIconPath": "img/5.png",
+        "iconPath": "img/5.png",
+        "pagePath": "pages/repairpart/repairpart",
+        "text": "维修件"
+      },
+      {
+        "selectedIconPath": "img/6.png",
+        "iconPath": "img/6.png",
+        "pagePath": "pages/index/index",
+        "text": "我的"
+      }
+    ]
+  }
+}

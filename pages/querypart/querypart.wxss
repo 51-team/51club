@@ -1,0 +1,107 @@
+/* pages/querypart/querypart.wxss */
+
+page {
+  font-size: 32rpx;
+}
+
+.top_list {
+  margin-top: 40rpx;
+}
+
+.top_list_item {
+  width: 187rpx;
+  text-align: center;
+  
+}
+
+.search_icon {
+  position: absolute;
+  right: 86rpx;
+  width: 34rpx;
+  height: 34rpx;
+  margin-top: 26rpx;
+}
+
+.search {
+  background: #f9f9f9;
+  margin: 0;
+  margin-left: 5%;
+  padding-left: 3%;
+  margin-top: 30rpx;
+  height: 84rpx;
+  border-radius: 10rpx;
+  width: 86%;
+}
+
+.p_search {
+  margin-left: 12rpx;
+}
+
+.xxx {
+  width: 100%;
+  height: 24rpx;
+  background: #f9f9f9;
+  margin-top: 20rpx;
+}
+
+.centent {
+  margin: 30rpx;
+}
+
+.item {
+  border-radius: 50rpx;
+  background: #f2f2f2;
+  padding: 10rpx 30rpx 10rpx 30rpx;
+  font-size: 28rpx;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+}
+.nianji{
+  margin-right: 40rpx;
+  font-size: 28rpx;
+  color: #88A1C0
+}
+.label{
+  width: 100%;
+  padding: 20rpx  30rpx 20rpx 30rpx;
+  border-bottom: 2px solid #f2f2f2;
+}
+.recommend{
+  border-top: 1px solid #f2f2f2;
+  min-height: 150rpx;
+  padding-top: 30rpx;
+  background: white;
+}
+.l_30{
+  color: #595063;
+  margin-left: 30rpx;
+  min-width:380rpx;
+}
+
+.table {
+  border:1px solid #dadada;
+  border-right: 0;
+  border-bottom: 0;
+  width: 98%;
+}
+.tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.td {
+  padding: 10px;
+  border-bottom: 1px solid #dadada;
+  border-right: 1px solid #dadada;
+  text-align: center;
+  width:100%
+}
+.th {
+  width: 40%;
+  justify-content: center;
+  background: #3366FF;
+  color: #fff;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+}

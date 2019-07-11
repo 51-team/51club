@@ -1,0 +1,15 @@
+<view class="container">
+    <block wx:for="{{list}}">
+        <navigator url="../details/index?id={{item.id}}">
+        <view class="brand_item">
+            
+                <image src="http://tecapp.tecalliance.net/api/TEC/en/media/tecdoc/thumbnail/{{item.documentId}}?X-TecApp-Product=TEC" class="pic"></image>
+                <view class="right_cont">
+                    <text class="country">品牌：{{item.brandName}}</text>
+                    <text class="name">零件号：{{item.articleNo}}</text>
+                </view>
+            
+        </view>
+        </navigator>
+    </block>
+</view>
