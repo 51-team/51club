@@ -1,7 +1,7 @@
 <form bindsubmit="formSubmit">
   <!--提交按钮  -->
   <view class="searchbox">
-    <input type="text" name="vin" placeholder='输入17位车架号' style='border:1px solid #ccc;height:30px;' />
+    <input type="text" name="vin" placeholder='输入17位车架号' />
     <button formType="submit" class="search">搜索</button>
   </view>
 </form>

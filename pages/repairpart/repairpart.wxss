@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* pages/repairpart/repairpart.wxss */
 
 
@@ -161,6 +162,8 @@
 page{
   background: #f1f1f1;
 }
+=======
+>>>>>>> Stashed changes
 .container {
   position: relative;
   width: 100%;
@@ -168,14 +171,16 @@ page{
   background-color: #f1f1f1;
   color: black;
 }
-.nav_left{
+
+.nav_left {
   display: inline-block;
   width: 25%;
   height: 100%;
   background: #f1f1f1;
   text-align: center;
 }
-.nav_left .nav_left_items{
+
+.nav_left .nav_left_items {
   height: 35px;
   line-height: 35px;
   padding: 5px 0;
@@ -184,12 +189,14 @@ page{
   font-size: 14px;
   background: #fff;
 }
-.nav_left .nav_left_items.active{
+
+.nav_left .nav_left_items.active {
   background: #f1f1f1;
   color: #f9752b;
   border-right: none;
 }
-.nav_right{
+
+.nav_right {
   position: absolute;
   top: 0;
   right: 0;
@@ -199,23 +206,27 @@ page{
   box-sizing: border-box;
   /*border-radius: 4px;*/
 }
-.nav_right .nodata{
+
+.nav_right .nodata {
   text-align: center;
   margin: 10px;
   font-size: 14px;
 }
-.nav_right .nav_right_items{
+
+.nav_right .nav_right_items {
   float: left;
   width: 33%;
   height: 85px;
   text-align: center;
   padding-top: 20px;
 }
-.nav_right .nav_right_items image{
+
+.nav_right .nav_right_items image {
   width: 50px;
   height: 45px;
 }
-.nav_right .nav_right_items text{
+
+.nav_right .nav_right_items text {
   color: #6f6f6f;
   display: block;
   margin-top: 10px;
@@ -223,4 +234,42 @@ page{
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+<<<<<<< Updated upstream
 }
+=======
+}
+
+.table {
+  display: inline-flex;
+  flex-direction: column;
+  border: 1rpx solid rgba(218, 217, 217, 1);
+  border-bottom: 0;
+}
+
+.scrollClass {
+  display: flex;
+  width: 100%;
+  white-space: nowrap;
+  margin-top: 23px;
+  height: 100%;
+  background-color: white;
+}
+
+.table_main {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.td {
+  display: flex;
+  flex-direction: column;
+  width: 250rpx;
+  /* height: 90rpx; */
+  background: white;
+  justify-content: center;
+  align-items: center;
+  border: 1rpx solid rgba(218, 217, 217, 1);
+  border-top: 0;
+  border-left: 0;
+}
+>>>>>>> Stashed changes
