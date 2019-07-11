@@ -41,17 +41,18 @@ page {
   height: 64rpx;
   line-height: 64rpx;
   border: 1px solid #ccc;
-  border-radius: 33rpx;
+  border-radius: 32rpx;
   padding-left: 1em;
   flex-grow: 1;
+  box-sizing:border-box;
 }
 
 .searchbox button {
+  box-sizing:border-box;
   margin: 30rpx 30rpx 30rpx 0;
   height: 64rpx;
   line-height: 64rpx;
-  border: 1px solid #37ae14;
-  border-radius: 33rpx;
+  border-radius: 32rpx;
   background-color: #37ae14;
   color: #fff;
   width: 4em;
