@@ -9,28 +9,10 @@
     box-sizing: border-box;
 }
 
-.container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-} 
-
-@import "./style/layout.wxss";
 page {
   font-size: 28rpx;
 }
 
-.container {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box;
-}
 
 .searchbox {
   display: flex;
