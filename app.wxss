@@ -13,7 +13,7 @@ page {
   font-size: 28rpx;
 }
 
-
+/* 搜索控件组 */
 .searchbox {
   display: flex;
 }
