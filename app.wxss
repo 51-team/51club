@@ -1,7 +1,6 @@
 /**app.wxss**/
-<<<<<<< HEAD
-@import "./style/layout.wxss";
 
+@import "./style/layout.wxss";
 .container {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     display: flex;
@@ -10,11 +9,6 @@
     box-sizing: border-box;
 }
 
-page {
-    background-color: #f1f1f1;
-}
-=======
-<<<<<<< Updated upstream
 .container {
   height: 100%;
   display: flex;
@@ -24,7 +18,7 @@ page {
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
-=======
+
 @import "./style/layout.wxss";
 page {
   font-size: 28rpx;
@@ -64,5 +58,4 @@ page {
   font-size: 28rpx;
   text-align: center;
 }
->>>>>>> Stashed changes
->>>>>>> 51club-20190711
+
