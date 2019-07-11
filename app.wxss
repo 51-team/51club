@@ -1,4 +1,5 @@
 /**app.wxss**/
+<<<<<<< HEAD
 @import "./style/layout.wxss";
 
 .container {
@@ -12,3 +13,56 @@
 page {
     background-color: #f1f1f1;
 }
+=======
+<<<<<<< Updated upstream
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+=======
+@import "./style/layout.wxss";
+page {
+  font-size: 28rpx;
+}
+
+.container {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.searchbox {
+  display: flex;
+}
+
+.searchbox input {
+  margin: 30rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  border: 1px solid #ccc;
+  border-radius: 33rpx;
+  padding-left: 1em;
+  flex-grow: 1;
+}
+
+.searchbox button {
+  margin: 30rpx 30rpx 30rpx 0;
+  height: 64rpx;
+  line-height: 64rpx;
+  border: 1px solid #37ae14;
+  border-radius: 33rpx;
+  background-color: #37ae14;
+  color: #fff;
+  width: 4em;
+  font-size: 28rpx;
+  text-align: center;
+}
+>>>>>>> Stashed changes
+>>>>>>> 51club-20190711

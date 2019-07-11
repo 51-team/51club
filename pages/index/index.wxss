@@ -1,37 +1,7 @@
 /* pages/search/search.wxss */
 
-page {
-  font-size: 28rpx;
-}
-
 .top_list {
   margin-top: 40rpx;
-}
-
-.searchbox {
-  display: flex;
-}
-
-.searchbox input {
-  margin: 30rpx;
-  height: 64rpx;
-  line-height: 64rpx;
-  border: 2px solid #ccc;
-  border-radius: 32rpx;
-  padding-left: 1em;
-  flex-grow: 1;
-}
-
-.searchbox button {
-  margin: 30rpx 30rpx 30rpx 0;
-  height: 64rpx;
-  line-height: 64rpx;
-  border-radius: 32rpx;
-  background-color: #37ae14;
-  color: #fff;
-  width: 4em;
-  font-size: 28rpx;
-  text-align: center;
 }
 
 .top_list_item {

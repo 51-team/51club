@@ -1,10 +1,24 @@
 <!--pages/repairpart/repairpart.wxml-->
 <form bindsubmit="formSubmit">
+<<<<<<< HEAD
   <!--提交按钮  -->
   <view class="searchbox">
     <input type="text" name="vin" placeholder='输入17位车架号' style='border:1px solid #ccc;height:30px;' />
     <button formType="submit" class="search">搜索</button>
   </view>
+=======
+<<<<<<< Updated upstream
+<!--提交按钮  -->
+<input type="text" name="vin" placeholder='输入17位车架号' style='border:1px solid #ccc;height:30px;'/>
+<button formType="submit" class="search">搜索</button>   
+=======
+  <!--提交按钮  -->
+  <view class="searchbox">
+    <input type="text" name="vin" placeholder='输入17位车架号' />
+    <button formType="submit" class="search">搜索</button>
+  </view>
+>>>>>>> Stashed changes
+>>>>>>> 51club-20190711
 </form>
 <view wx:if="{{flag}}"><button formType="button" class="btn">车辆基本信息</button>  </view>
 <scroll-view scroll-x="true" class='scrollClass'>
