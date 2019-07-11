@@ -10,6 +10,8 @@
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fafafa",
     "navigationBarTitleText": "汽配俱乐部",
+    "navigationBarTextStyle": "black",
+    "backgroundColor":"#ffffff"
   },
   "sitemapLocation": "sitemap.json",
   "tabBar": {
