@@ -71,7 +71,7 @@
   <view class="table_main" wx:for="{{modelPartList}}" wx:key="modelPartList">
 
     <view class="td">{{item.name}}</view>
-    <navigator url='../querypart/querypart?type={{item.type}}&vin={{vin}}' hover-class="navigator-hover">
+    <navigator url='../querypart/querypart?type={{item.type}}&vin={{vin}}' hover-class="navigator-hover" backgroundColor= "#108ee9">
       <view class="td">
         {{item.oe}}
       </view>

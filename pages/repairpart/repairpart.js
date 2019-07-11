@@ -51,7 +51,6 @@ Page({
           navLeftItems: res.data
         });
         var url = 'http://106.12.96.70:8081/part/api/getSecondShortCutList/59582/' + res.data[0].shortCutId;
-        //subCateList
         network_util._get(url,
           function (res) {
             that.setData({
@@ -61,8 +60,6 @@ Page({
             console.log(res);
           }
         );
-      }, function (res) {
-        console.log(res);
       }
     );
   },

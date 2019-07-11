@@ -1,8 +1,10 @@
 <!--pages/repairpart/repairpart.wxml-->
 <form bindsubmit="formSubmit">
-<!--提交按钮  -->
-<input type="text" name="vin" placeholder='输入17位车架号' style='border:1px solid #ccc;height:30px;'/>
-<button formType="submit" class="search">搜索</button>   
+  <!--提交按钮  -->
+  <view class="searchbox">
+    <input type="text" name="vin" placeholder='输入17位车架号' style='border:1px solid #ccc;height:30px;' />
+    <button formType="submit" class="search">搜索</button>
+  </view>
 </form>
 <view wx:if="{{flag}}"><button formType="button" class="btn">车辆基本信息</button>  </view>
 <scroll-view scroll-x="true" class='scrollClass'>
@@ -54,7 +56,7 @@
     </view>
 </scroll-view>
 <view  wx:if="{{flag}}" bindtap="onclick" data-index="{{modelInfo.modelId}}">
-  查看零件列表
+  <button formType="button" class="btn">点击查看零件列表</button>
 </view>
  <view class="container">
   <view class="nav_left">
@@ -74,6 +76,5 @@
         </view>
       </block>
     </view>
-    <view wx:else class="nodata">暂无数据</view>
   </view>
 </view>
