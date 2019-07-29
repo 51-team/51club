@@ -17,7 +17,7 @@ Page({
     var type = options.type; //获取链接值  
     var vin = options.vin;
     wx.request({
-      url: 'http://106.12.96.70:8081/part/api/getNewPartByVin?vinType=1&type='+type+'&vin=' + vin,
+      url: 'https://www.51qx.club/part/api/getNewPartByVin?vinType=1&type='+type+'&vin=' + vin,
       header: { 'Content-Type': 'application/json' },
       success: function (res) {
         console.log(res.data)

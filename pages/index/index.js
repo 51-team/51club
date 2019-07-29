@@ -11,7 +11,7 @@ Page({
     var that = this;
     var vin = e.detail.value.vin; //获取表单所有name=id的值 
     wx.request({
-      url: 'http://106.12.96.70:8081/part/api/getModelInfoByVin?type=1&vin=' + vin,
+      url: 'https://www.51qx.club/part/api/getModelInfoByVin?type=1&vin=' + vin,
       header: { 'Content-Type': 'application/json' },
       success: function (res) {
         console.log(res.data)

@@ -20,7 +20,7 @@ Page({
     var that = this;
     var vin = e.detail.value.vin; 
     wx.request({
-      url: 'http://106.12.96.70:8081/part/api/getRepairTree/' + vin,
+      url: 'https://www.51qx.club/part/api/getRepairTree/' + vin,
       header: { 'Content-Type': 'application/json' },
       success: function (res) {
         that.setData({
@@ -43,14 +43,14 @@ Page({
    */
   onclick: function (e) {
     var that = this;
-    var url = 'http://106.12.96.70:8081/part/api/getShortCutList/59582';
+    var url = 'https://www.51qx.club/part/api/getShortCutList/'+e.modelId;
     //parentCateList
     network_util._get(url,
       function (res) {
         that.setData({
           navLeftItems: res.data
         });
-        var url = 'http://106.12.96.70:8081/part/api/getSecondShortCutList/59582/' + res.data[0].shortCutId;
+        var url = 'https://www.51qx.club/part/api/getSecondShortCutList/' + e.modelId +'/' + res.data[0].shortCutId;
         network_util._get(url,
           function (res) {
             that.setData({
@@ -73,7 +73,7 @@ Page({
       curNav: index,
       curIndex: id
     })
-    var url = "http://106.12.96.70:8081/part/api/getSecondShortCutList/59582/" + id;
+    var url = "https://www.51qx.club/part/api/getSecondShortCutList/59582/" + id;
     network_util._get(url,
       function (res) {
         that.setData({

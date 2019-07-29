@@ -7,7 +7,7 @@ Page({
 
       var that = this;
       wx.request({
-        url: 'http://106.12.96.70:8081/part/api/getTecPartList/59582/100384',
+        url: 'https://www.51qx.club/part/api/getTecPartList/'+options.modelId+'/'+options.groupId,
         header: { 'Content-Type': 'application/json' },
         success: function (res) {
           that.setData({
