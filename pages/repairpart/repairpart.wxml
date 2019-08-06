@@ -7,8 +7,9 @@
   </view>
 
 </form>
-<view wx:if="{{flag}}">
-  <button formType="button" class="btn">车辆基本信息</button>
+<view class="title" wx:if="{{flag}}">
+  <!-- <button formType="button" class="btn">车辆基本信息</button> -->
+  车辆基本信息
 </view>
 <scroll-view scroll-x="true" class='scrollClass'>
   <view id='basicInfo' class="table" wx:if="{{flag}}">

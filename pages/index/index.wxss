@@ -1,5 +1,5 @@
 /* pages/search/search.wxss */
-
+.title{font-size: 32rpx;text-align: center;background-color: #F6F6F6;padding: 20rpx 0;}
 .top_list {
   margin-top: 40rpx;
 }
@@ -81,16 +81,18 @@
   display: inline-flex;
   flex-direction: column;
   border: 1rpx solid rgba(218, 217, 217, 1);
-  border-bottom: 0;
+  /* border-bottom: 0; */
+  width: 100%;
 }
 
 .scrollClass {
   display: flex;
-  width: 100%;
+  width: 85%;
   white-space: nowrap;
-  margin-top: 23px;
   height: 100%;
   background-color: white;
+  margin: 40rpx auto;
+  box-sizing: border-box;
 }
 
 .table_header {
@@ -133,14 +135,14 @@
 .td {
   display: flex;
   flex-direction: column;
-  width: 250rpx;
-  /* height: 90rpx; */
+  width: 50%;
   background: white;
   justify-content: center;
   align-items: center;
   border: 1rpx solid rgba(218, 217, 217, 1);
   border-top: 0;
   border-left: 0;
+  height: 60rpx;
 }
 
 .table_Text_class {

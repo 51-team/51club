@@ -11,6 +11,7 @@
 
 page {
   font-size: 28rpx;
+  color: #333;
 }
 
 /* 搜索控件组 */

@@ -4,10 +4,11 @@
     <input type="text" name="vin" placeholder='输入17位车架号' />
     <button formType="submit" class="search">搜索</button>
   </view>
-  
+
 </form>
-<view wx:if="{{flag}}">
-  <button formType="button" class="btn">车辆基本信息</button>
+<view class="title" wx:if="{{flag}}">
+  <!-- <button formType="button" class="btn">车辆基本信息</button> -->
+  车辆基本信息
 </view>
 <scroll-view scroll-x="true" class='scrollClass'>
   <view id='basicInfo' class="table" wx:if="{{flag}}">
@@ -55,8 +56,9 @@
 </scroll-view>
 <view></view>
 
-<view wx:if="{{flag}}">
-  <button formType="button" class="btn">常用保养件</button>
+<view  class="title"  wx:if="{{flag}}">
+  <!-- <button formType="button" class="btn">常用保养件</button> -->
+  常用保养件
 </view>
 <view id='partInfo' class="table" wx:if="{{flag}}">
   <view class='table_main'>
@@ -72,7 +74,7 @@
   <view class="table_main" wx:for="{{modelPartList}}" wx:key="modelPartList">
 
     <view class="td">{{item.name}}</view>
-    <navigator url='../querypart/querypart?type={{item.type}}&vin={{vin}}' hover-class="navigator-hover" backgroundColor= "#108ee9">
+    <navigator url='../querypart/querypart?type={{item.type}}&vin={{vin}}' hover-class="navigator-hover" backgroundColor="#108ee9">
       <view class="td">
         {{item.oe}}
       </view>
